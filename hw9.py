@@ -30,7 +30,7 @@ def get_legal_moves(cards_you_have, cards_played, heart_broken=False):
 
 def compute_score(cards):
     score = sum(1 for card in cards if card.startswith('♥'))
-    if '♠12' in cards:
+    if '♠12' in card:
         score += 13
     return score
 
